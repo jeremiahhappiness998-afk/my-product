@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bible Verse Generator Pro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Bible Verse Generator <span class="pro">PRO</span></h1>
+
+    <div class="card">
+      <input id="reference" placeholder="Enter verse (e.g., John 3:16)" />
+
+      <select id="translation">
+        <option value="">Default (API)</option>
+        <option value="kjv">KJV</option>
+        <option value="web">WEB</option>
+      </select>
+
+      <button onclick="generateVerse()">Generate Verse</button>
+      <button onclick="verseOfDay()" class="secondary">Verse of the Day</button>
+    </div>
+
+    <pre id="output" class="output"></pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
